@@ -32,12 +32,12 @@ function inputFunction() {
     }
 };
 
-btn_submit.addEventListener("click", function () {
+btn_submit.addEventListener("click",() = {
     inputFunction()
 });
 
 //if user presses enter it should submit 
-document.querySelector(".input_user").addEventListener("keyup", function (e) {
+document.querySelector(".input_user").addEventListener("keyup",(e) = {
     if (e.keyCode === 13) {
         //alert("you have pressed enter key");
         inputFunction()
@@ -62,7 +62,7 @@ function fetchUser() {
 }
 
 // downloads screenshot to local computer
-document.querySelector(".download-button").addEventListener("click",function() {
+document.querySelector(".download-button").addEventListener("click",() = {
     html2canvas(document.querySelector(".container"),{useCORS:true}).then(function(canvas) {
         console.log(canvas);
         saveAs(canvas.toDataURL(),'screenshot.png');
